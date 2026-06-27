@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Product — Rubrica</title>
+<meta name="description" content="How Rubrica grades: consistent, private, and explained, running inside your institution." />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<script>
+  tailwind.config = { theme: { extend: {
+    fontFamily: { sans: ['Inter','system-ui','sans-serif'], display: ['Fraunces','Georgia','serif'] },
+    colors: { paper:'#f4f2ed', card:'#faf9f6', ink:'#403d38', muted:'#6f6a62',
+      sage:{100:'#e4e8df',200:'#cdd5c5',400:'#9caf94',500:'#82967a',600:'#6c7f64',700:'#586850'},
+      clay:{100:'#ece0d8',400:'#c6a594',500:'#b08d7c',600:'#977365'},
+      slatey:{400:'#a4b0b4',500:'#8a989d'}, dark:'#3b3e38' } } } };
+</script>
+<style>
+  html{scroll-behavior:smooth} body{font-family:'Inter',sans-serif}
+  .font-display{font-family:'Fraunces',serif} .glass{backdrop-filter:blur(10px)}
+  .card-hover{transition:transform .25s ease,box-shadow .25s ease}
+  .card-hover:hover{transform:translateY(-3px);box-shadow:0 16px 36px -20px rgba(64,61,56,.35)}
+</style>
+</head>
+<body class="bg-paper text-ink antialiased">
+
+<header class="sticky top-0 z-50 border-b border-sage-100 bg-paper/85 glass">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <a href="index.html" class="flex items-center gap-2.5">
+      <span style="color:#8b2f33"><svg viewBox="0 0 40 40" class="h-8 w-8" fill="none">
+        <path d="M20 7 L34 14 L20 21 L6 14 Z" fill="currentColor"/>
+        <path d="M11 17.5 L11 25 C11 27.2 15 29 20 29 C25 29 29 27.2 29 25 L29 17.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="34" y1="14" x2="34" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="34" cy="25.3" r="1.9" fill="currentColor"/></svg></span>
+      <span class="font-display text-xl tracking-tight" style="font-weight:600">Rubrica</span>
+    </a>
+    <nav class="hidden items-center gap-8 text-sm text-muted md:flex">
+      <a href="product.html" class="text-ink">Product</a>
+      <a href="research.html" class="hover:text-ink">Research</a>
+      <a href="company.html" class="hover:text-ink">Company</a>
+    </nav>
+    <a href="contact.html" class="rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-paper transition hover:bg-sage-700">Request a demo</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="mx-auto max-w-4xl px-6 py-20 text-center">
+  <p class="text-sm font-medium uppercase tracking-wider text-clay-600">The product</p>
+  <h1 class="mt-4 font-display text-5xl leading-tight tracking-tight" style="font-weight:600">Consistent, private, and explained.</h1>
+  <p class="mx-auto mt-5 max-w-2xl text-lg text-muted">Rubrica is a grading model you run inside your own institution. It scores the same way every time, shows the evidence behind each grade, and gives students feedback they can use.</p>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="border-y border-sage-100 bg-card">
+  <div class="mx-auto max-w-6xl px-6 py-20">
+    <h2 class="text-center font-display text-3xl tracking-tight" style="font-weight:600">How it works</h2>
+    <div class="mt-12 grid gap-6 md:grid-cols-4">
+      <div class="rounded-2xl border border-sage-100 bg-paper p-6">
+        <div class="text-sm font-medium text-clay-600">Step 1</div>
+        <h3 class="mt-2 font-display text-lg" style="font-weight:600">Bring your rubric</h3>
+        <p class="mt-2 text-sm text-muted">Upload your existing rubric and a handful of graded examples for the assignment.</p>
+      </div>
+      <div class="rounded-2xl border border-sage-100 bg-paper p-6">
+        <div class="text-sm font-medium text-clay-600">Step 2</div>
+        <h3 class="mt-2 font-display text-lg" style="font-weight:600">We adapt the model</h3>
+        <p class="mt-2 text-sm text-muted">An open weight model is tuned for your subject so it grades to your standard, not a generic one.</p>
+      </div>
+      <div class="rounded-2xl border border-sage-100 bg-paper p-6">
+        <div class="text-sm font-medium text-clay-600">Step 3</div>
+        <h3 class="mt-2 font-display text-lg" style="font-weight:600">Deploy on your side</h3>
+        <p class="mt-2 text-sm text-muted">It runs on your servers or private cloud. Nothing about a student leaves your network.</p>
+      </div>
+      <div class="rounded-2xl border border-sage-100 bg-paper p-6">
+        <div class="text-sm font-medium text-clay-600">Step 4</div>
+        <h3 class="mt-2 font-display text-lg" style="font-weight:600">Grade with evidence</h3>
+        <p class="mt-2 text-sm text-muted">Each score arrives with its reasoning and feedback, ready for faculty to review.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section class="mx-auto max-w-6xl px-6 py-20">
+  <h2 class="text-center font-display text-3xl tracking-tight" style="font-weight:600">What makes the grade trustworthy</h2>
+  <div class="mt-12 grid gap-6 md:grid-cols-3">
+    <div class="card-hover rounded-2xl border border-sage-100 bg-card p-8">
+      <div class="font-display text-3xl text-sage-500" style="font-weight:600">01</div>
+      <h3 class="mt-3 font-display text-lg" style="font-weight:600">It stays consistent</h3>
+      <p class="mt-2 text-muted">Answers that mean the same thing get the same score, however they are worded or ordered.</p>
+    </div>
+    <div class="card-hover rounded-2xl border border-sage-100 bg-card p-8">
+      <div class="font-display text-3xl text-sage-500" style="font-weight:600">02</div>
+      <h3 class="mt-3 font-display text-lg" style="font-weight:600">It reads the evidence</h3>
+      <p class="mt-2 text-muted">The model is guided to the parts of an answer that matter, not length, style, or filler text.</p>
+    </div>
+    <div class="card-hover rounded-2xl border border-sage-100 bg-card p-8">
+      <div class="font-display text-3xl text-sage-500" style="font-weight:600">03</div>
+      <h3 class="mt-3 font-display text-lg" style="font-weight:600">It stays on campus</h3>
+      <p class="mt-2 text-muted">Self hosted on your own GPUs, so you keep control of student data and stay FERPA aligned.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MORE THAN A SCORE -->
+<section class="border-y border-sage-100 bg-dark text-paper">
+  <div class="mx-auto max-w-6xl px-6 py-20">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="font-display text-3xl tracking-tight" style="font-weight:600">A grade should explain itself</h2>
+      <p class="mt-4 text-paper/70">Other tools return a number and stop. Rubrica returns three things.</p>
+    </div>
+    <div class="mt-12 grid gap-6 md:grid-cols-3">
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+        <div class="text-2xl">✓</div>
+        <h3 class="mt-4 font-display text-lg" style="font-weight:600">The score</h3>
+        <p class="mt-2 text-sm text-paper/70">A consistent grade against your rubric.</p>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+        <div class="text-2xl">🔎</div>
+        <h3 class="mt-4 font-display text-lg" style="font-weight:600">The rationale</h3>
+        <p class="mt-2 text-sm text-paper/70">Which criteria were met, and the exact passage each judgment rests on, so faculty can check and defend it.</p>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+        <div class="text-2xl">✎</div>
+        <h3 class="mt-4 font-display text-lg" style="font-weight:600">The feedback</h3>
+        <p class="mt-2 text-sm text-paper/70">Specific notes on what to improve, so students learn from the grade instead of just receiving it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="mx-auto max-w-6xl px-6 py-20">
+  <div class="rounded-3xl bg-sage-700 px-8 py-14 text-center text-paper">
+    <h2 class="font-display text-3xl tracking-tight" style="font-weight:600">See it on your own assignments</h2>
+    <p class="mx-auto mt-3 max-w-xl text-paper/80">We will run a short pilot on a real assignment from your course and show you the scores, the reasoning, and the feedback.</p>
+    <a href="contact.html" class="mt-7 inline-block rounded-full bg-paper px-8 py-3.5 font-medium text-sage-700 transition hover:bg-sage-100">Request a demo</a>
+  </div>
+</section>
+
+<footer class="border-t border-sage-100 bg-paper">
+  <div class="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-2">
+    <div>
+      <div class="flex items-center gap-2 text-ink">
+        <span style="color:#8b2f33"><svg viewBox="0 0 40 40" class="h-6 w-6" fill="none">
+          <path d="M20 7 L34 14 L20 21 L6 14 Z" fill="currentColor"/>
+          <path d="M11 17.5 L11 25 C11 27.2 15 29 20 29 C25 29 29 27.2 29 25 L29 17.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="34" y1="14" x2="34" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="34" cy="25.3" r="1.9" fill="currentColor"/></svg></span>
+        <span class="font-display text-lg" style="font-weight:600">Rubrica</span>
+      </div>
+      <p class="mt-3 max-w-xs text-sm text-muted">Trusted, private AI grading for education.</p>
+    </div>
+    <div class="flex flex-wrap gap-x-12 gap-y-2 text-sm text-muted md:justify-end">
+      <a href="product.html" class="hover:text-ink">Product</a>
+      <a href="research.html" class="hover:text-ink">Research</a>
+      <a href="company.html" class="hover:text-ink">Company</a>
+      <a href="contact.html" class="hover:text-ink">Request a demo</a>
+    </div>
+  </div>
+  <div class="border-t border-sage-100"><div class="mx-auto max-w-6xl px-6 py-5 text-xs text-muted">© 2026 Rubrica</div></div>
+</footer>
+
+</body>
+</html>

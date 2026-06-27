@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Company — Rubrica</title>
+<meta name="description" content="Rubrica's mission, market, and roadmap. Trusted, private AI evaluation, starting in higher education." />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<script>
+  tailwind.config = { theme: { extend: {
+    fontFamily: { sans: ['Inter','system-ui','sans-serif'], display: ['Fraunces','Georgia','serif'] },
+    colors: { paper:'#f4f2ed', card:'#faf9f6', ink:'#403d38', muted:'#6f6a62',
+      sage:{100:'#e4e8df',200:'#cdd5c5',400:'#9caf94',500:'#82967a',600:'#6c7f64',700:'#586850'},
+      clay:{100:'#ece0d8',400:'#c6a594',500:'#b08d7c',600:'#977365'},
+      slatey:{400:'#a4b0b4',500:'#8a989d'}, dark:'#3b3e38' } } } };
+</script>
+<style>
+  html{scroll-behavior:smooth} body{font-family:'Inter',sans-serif}
+  .font-display{font-family:'Fraunces',serif} .glass{backdrop-filter:blur(10px)}
+  .card-hover{transition:transform .25s ease,box-shadow .25s ease}
+  .card-hover:hover{transform:translateY(-3px);box-shadow:0 16px 36px -20px rgba(64,61,56,.35)}
+</style>
+</head>
+<body class="bg-paper text-ink antialiased">
+
+<header class="sticky top-0 z-50 border-b border-sage-100 bg-paper/85 glass">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <a href="index.html" class="flex items-center gap-2.5">
+      <span style="color:#8b2f33"><svg viewBox="0 0 40 40" class="h-8 w-8" fill="none">
+        <path d="M20 7 L34 14 L20 21 L6 14 Z" fill="currentColor"/>
+        <path d="M11 17.5 L11 25 C11 27.2 15 29 20 29 C25 29 29 27.2 29 25 L29 17.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="34" y1="14" x2="34" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="34" cy="25.3" r="1.9" fill="currentColor"/></svg></span>
+      <span class="font-display text-xl tracking-tight" style="font-weight:600">Rubrica</span>
+    </a>
+    <nav class="hidden items-center gap-8 text-sm text-muted md:flex">
+      <a href="product.html" class="hover:text-ink">Product</a>
+      <a href="research.html" class="hover:text-ink">Research</a>
+      <a href="company.html" class="text-ink">Company</a>
+    </nav>
+    <a href="contact.html" class="rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-paper transition hover:bg-sage-700">Request a demo</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="mx-auto max-w-6xl px-6 py-20 text-center">
+  <p class="text-sm font-medium uppercase tracking-wider text-clay-600">The company</p>
+  <h1 class="mt-4 font-display text-4xl md:text-5xl leading-tight tracking-tight lg:whitespace-nowrap" style="font-weight:600">Trusted AI evaluation, starting in education.</h1>
+  <p class="mx-auto mt-5 max-w-2xl text-lg text-muted">Anywhere people score open ended answers at scale, they need it to be consistent, explainable, and private. We are building that, beginning with the place it matters most: the classroom.</p>
+</section>
+
+<!-- MARKET -->
+<section class="border-y border-sage-100 bg-card">
+  <div class="mx-auto max-w-6xl px-6 py-20">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="font-display text-3xl tracking-tight" style="font-weight:600">A wedge, not a ceiling</h2>
+      <p class="mt-4 text-muted">Universities are our entry point, not our limit. The same engine that grades coursework scores open ended answers everywhere they are evaluated. As trust in the model grows, the same product moves outward.</p>
+    </div>
+    <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <div class="rounded-2xl border border-sage-200 bg-paper p-6">
+        <div class="text-sm font-medium text-clay-600">Start here</div>
+        <h3 class="mt-2 font-display text-lg" style="font-weight:600">Higher education</h3>
+        <p class="mt-2 text-sm text-muted">Courses, programs, and online learning that grade short answers and assignments.</p>
+      </div>
+      <div class="rounded-2xl border border-sage-100 bg-paper p-6">
+        <div class="text-sm font-medium text-muted">Then</div>
+        <h3 class="mt-2 font-display text-lg" style="font-weight:600">Certification and licensure</h3>
+        <p class="mt-2 text-sm text-muted">Exam and credentialing bodies that need scoring they can stand behind in an audit.</p>
+      </div>
+      <div class="rounded-2xl border border-sage-100 bg-paper p-6">
+        <div class="text-sm font-medium text-muted">Then</div>
+        <h3 class="mt-2 font-display text-lg" style="font-weight:600">Corporate learning</h3>
+        <p class="mt-2 text-sm text-muted">Training and compliance teams assessing open responses across large workforces.</p>
+      </div>
+      <div class="rounded-2xl border border-sage-100 bg-paper p-6">
+        <div class="text-sm font-medium text-muted">Then</div>
+        <h3 class="mt-2 font-display text-lg" style="font-weight:600">Skills and coding</h3>
+        <p class="mt-2 text-sm text-muted">Technical assessment platforms scoring work that has more than one right form.</p>
+      </div>
+    </div>
+    <p class="mx-auto mt-10 max-w-2xl text-center text-sm text-muted">The hard part is the same in every one of these: a score that does not drift, comes with evidence, and never has to leave the customer's walls. We build that once.</p>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="mx-auto max-w-5xl px-6 py-20">
+  <h2 class="text-center font-display text-3xl tracking-tight" style="font-weight:600">Where we're headed</h2>
+  <div class="mt-12 space-y-4">
+    <div class="flex gap-5 rounded-2xl border border-sage-200 bg-sage-100/60 p-6">
+      <span class="font-display text-lg text-sage-700" style="font-weight:600">Now</span>
+      <div><h3 class="font-medium">Reliable, private grading</h3><p class="text-sm text-muted">Consistent scoring with rationale and feedback for STEM coursework, piloted with university partners.</p></div>
+    </div>
+    <div class="flex gap-5 rounded-2xl border border-sage-100 bg-card p-6">
+      <span class="font-display text-lg text-muted" style="font-weight:600">Next</span>
+      <div><h3 class="font-medium">Assessment integrity</h3><p class="text-sm text-muted">Consistency checks, appeals support, and audit ready records across a department.</p></div>
+    </div>
+    <div class="flex gap-5 rounded-2xl border border-sage-100 bg-card p-6">
+      <span class="font-display text-lg text-muted" style="font-weight:600">Later</span>
+      <div><h3 class="font-medium">Private tutoring and feedback</h3><p class="text-sm text-muted">Self hosted feedback that guides students, and the same trusted engine beyond the campus.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="border-y border-sage-100 bg-card">
+  <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+    <h2 class="font-display text-3xl tracking-tight" style="font-weight:600">Who's behind it</h2>
+    <p class="mx-auto mt-4 max-w-2xl text-muted">Rubrica is founded by Jing Shao, a PhD researcher at the University of Arizona working on trustworthy LLM evaluation, alongside fellow researchers across Stanford, Carnegie Mellon, Northeastern, and Boise State.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="mx-auto max-w-6xl px-6 py-20">
+  <div class="rounded-3xl bg-sage-700 px-8 py-14 text-center text-paper">
+    <h2 class="font-display text-3xl tracking-tight" style="font-weight:600">Let's talk</h2>
+    <p class="mx-auto mt-3 max-w-xl text-paper/80">Whether you run a course, a program, or want to partner on a pilot, we would love to hear from you.</p>
+    <a href="contact.html" class="mt-7 inline-block rounded-full bg-paper px-8 py-3.5 font-medium text-sage-700 transition hover:bg-sage-100">Get in touch</a>
+  </div>
+</section>
+
+<footer class="border-t border-sage-100 bg-paper">
+  <div class="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-2">
+    <div>
+      <div class="flex items-center gap-2 text-ink">
+        <span style="color:#8b2f33"><svg viewBox="0 0 40 40" class="h-6 w-6" fill="none">
+          <path d="M20 7 L34 14 L20 21 L6 14 Z" fill="currentColor"/>
+          <path d="M11 17.5 L11 25 C11 27.2 15 29 20 29 C25 29 29 27.2 29 25 L29 17.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          <line x1="34" y1="14" x2="34" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="34" cy="25.3" r="1.9" fill="currentColor"/></svg></span>
+        <span class="font-display text-lg" style="font-weight:600">Rubrica</span>
+      </div>
+      <p class="mt-3 max-w-xs text-sm text-muted">Trusted, private AI grading for education.</p>
+    </div>
+    <div class="flex flex-wrap gap-x-12 gap-y-2 text-sm text-muted md:justify-end">
+      <a href="product.html" class="hover:text-ink">Product</a>
+      <a href="research.html" class="hover:text-ink">Research</a>
+      <a href="company.html" class="hover:text-ink">Company</a>
+      <a href="contact.html" class="hover:text-ink">Request a demo</a>
+    </div>
+  </div>
+  <div class="border-t border-sage-100"><div class="mx-auto max-w-6xl px-6 py-5 text-xs text-muted">© 2026 Rubrica</div></div>
+</footer>
+
+</body>
+</html>
